@@ -1,0 +1,28 @@
+name: Build and Push Project 1 ARM Docker Image
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'project-1/*'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Copy README.md file into docs
+        run: cp project-1/README.md  project-1/app/docs/index.md
+      
+      - name: Build and push Docker image to Docker Hub
+        uses: ./.github/actions/build-deploy-docker/
+        with:
+          dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
+          dockerhub_token:  ${{ secrets.DOCKERHUB_TOKEN }}
+          docker_repo: computer-network
+          version: p1
+          build_context: project-1/app

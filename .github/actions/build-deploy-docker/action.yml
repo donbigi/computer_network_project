@@ -1,0 +1,51 @@
+name: "Setup Docker"
+description: >
+  'This action will:'
+  '1. Setup Docker Buildx, to easily build, cache and push container images'
+  '2. Authenticate to Docker, to allow Docker to push to Docker hub'
+  '3. Authorize and push to Docker hub'
+
+inputs:
+  dockerhub_username:
+    description: "The Docker Hub username to use for authentication"
+    required: true
+  dockerhub_token:
+    description: "The Docker Hub token to use for authentication"
+    required: true
+  docker_repo:
+    description: "The Docker Hub repository to push the image to"
+    required: true
+  version:
+    description:  "The version of the image to build"
+    required: true
+  build_context:
+    description: "The context to use for building the image"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ inputs.dockerhub_username }}
+        password: ${{ inputs.dockerhub_token}}
+
+    - name: Build and push arm Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: ${{ inputs.build_context }}
+        push: true
+        platforms: linux/arm64
+        tags: |
+          ${{ inputs.dockerhub_username }}/${{ inputs.docker_repo }}:${{ inputs.version }}
+          ${{ inputs.dockerhub_username }}/${{ inputs.docker_repo }}:${{ inputs.version }}-${{ github.sha }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Verify Docker images
+      shell: bash
+      run: docker buildx imagetools inspect ${{ inputs.dockerhub_username }}/${{ inputs.docker_repo }}:${{ inputs.version }}
