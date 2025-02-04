@@ -88,9 +88,11 @@ The network architecture includes:
 ---
 
 ![Router and Switch](https://github.com/donbigi/computer_network_project/raw/main/project-1/app/img/router-switch.jpeg)
+
 Image of the router and switch used.
 
 ![Router and Switch](https://github.com/donbigi/computer_network_project/raw/main/project-1/app/img/kubernete-cluser.jpeg)
+
 Image of raspberry pi kubernetes cluster running the application.
 
 ---
