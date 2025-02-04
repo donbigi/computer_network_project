@@ -1,5 +1,11 @@
-# computer_network_project
-This repo holds the project for computer network class
-By Cos-Ibe Uchechukwu
+# Computer Networks Project
 
-- [Project 1](https://github.com/donbigi/computer_network_project/tree/main/project-1)
+This repo holds the project for computer network class
+
+## Authors
+
+* **Cos-Ibe Uchechukwu** - [DonBigi](https://github.com/donbigi)
+
+## Projects
+
+* [Project 1](https://github.com/donbigi/computer_network_project/tree/main/project-1)
