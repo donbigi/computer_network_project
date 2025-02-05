@@ -17,7 +17,7 @@ spec:
       containers:
         - name: http-server
           imagePullPolicy: Always
-          image: donbigi/computer-network:p1
+          image: donbigi/computer-network:p1-7ddaa4865855307f2e9db6572fe5966158f2f465
           ports:
             - containerPort: 8000
 ---
