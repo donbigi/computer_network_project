@@ -239,5 +239,4 @@ git push origin main
 
 ## **Final Notes**  
 
-This project successfully integrates **networking principles**, **containerized deployments**, **GitOps with ArgoCD**, and **automated CI/CD workflows** while ensuring security and reliability through **Cloudflare Tunnel**.  
-change
+This project successfully integrates **networking principles**, **containerized deployments**, **GitOps with ArgoCD**, and **automated CI/CD workflows** while ensuring security and reliability through **Cloudflare Tunnel**.
