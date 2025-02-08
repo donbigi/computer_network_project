@@ -21,6 +21,7 @@ WORKDIR /mnt
 # Copy markdown and configuration files
 COPY . /mnt/
 
+
 # Expose port for mkdocs
 EXPOSE 8000
 
