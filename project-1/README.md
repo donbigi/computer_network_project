@@ -1,5 +1,9 @@
 # **Network Integration Project**  
 
+## Authors
+
+* **Cos-Ibe Uchechukwu** - [DonBigi](https://github.com/donbigi)
+
 This project demonstrates the integration of **networking principles**, **containerized deployment**, **automation**, and **secure public access** using **Cloudflare Tunnel**, **Kubernetes**, **ArgoCD**, and **CI/CD workflows**.  
 
 The website **[project-1.ucosibe.xyz](https://project-1.ucosibe.xyz/)** hosts this README page and automatically updates when changes are committed to the repository.  
