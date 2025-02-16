@@ -1,7 +1,5 @@
 # **Network Integration Project**  
 
-This is a test to make sure my ci works as expected
-
 ## Authors
 
 * **Cos-Ibe Uchechukwu** - [DonBigi](https://github.com/donbigi)
