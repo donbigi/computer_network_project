@@ -25,9 +25,15 @@ This enhanced weight logging application implements:
 
 ---
 
-## ⚡ Additional Enhancements  
+## ⚡ Additional Enhancements
 
-### A. Performance Optimization
+### A. Database Integration
+
+| Feature | Implementation | Impact |
+|---------|----------------|--------|
+| **MySql** | Docker container on Kubernetes | Holds records of weight recorded |
+
+### B. Performance Optimization
 
 | Feature | Implementation | Impact |
 |---------|----------------|--------|
@@ -35,7 +41,7 @@ This enhanced weight logging application implements:
 | **Containerization** | Dockerized app + Kubernetes | 99.9% uptime |
 | **Code Minification** | Optimized CSS | 30% smaller bundle size |
 
-### B. Deployment & Infrastructure
+### C. Deployment & Infrastructure
 
 | Component | Technology | Purpose |
 |-----------|------------|---------|
@@ -45,7 +51,7 @@ This enhanced weight logging application implements:
 
 ---
 
-## 📊 Monitoring & Analytics
+## D. 📊 Monitoring & Analytics
 
 ![Cloudflare Analytics](https://github.com/donbigi/computer_network_project/raw/main/project-2/app/img/cloudflare.png)  
 *Real-time monitoring dashboard*
