@@ -31,7 +31,7 @@ This enhanced weight logging application implements:
 
 | Feature | Implementation | Impact |
 |---------|----------------|--------|
-| **MySql** | Docker container on Kubernetes | Holds records of weight recorded (store and retrieve data). |
+| **MySql** | Docker container on Kubernetes | Holds weights recorded (store and retrieve data). |
 
 ![Kubernetes Architecture.png](https://github.com/donbigi/computer_network_project/raw/main/project-2/app/img/kubernetes_architecture.png)  
 *Project 2 frontend and mysql backend on kubernetes*
