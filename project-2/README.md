@@ -89,17 +89,15 @@ DB_PASS=env.PASS
 
 ---
 
-## 📄 Technical Report Highlights  
+## 📄 Technical Highlights  
 
 1. **Security Implementation**  
    - Converted all HTTP traffic to HTTPS using Cloudflare's free SSL  
    - Reduced SQL injection risks by 92% using prepared statements
 
-2. **Performance Gains**  
-   ![Performance Metrics](https://github.com/donbigi/computer_network_project/raw/main/project-2/app/img/cloudflare_peak.png)  
-
-3. **Monitoring Insights**  
+2. **Monitoring Insights**  
    - Peak traffic: 49 requests/hour (Weekdays 7 - 7:20 PM)  
+   ![Performance Metrics](https://github.com/donbigi/computer_network_project/raw/main/project-2/app/img/cloudflare_peak.png)
 
 ---
 
