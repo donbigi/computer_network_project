@@ -21,7 +21,6 @@ This enhanced weight logging application implements:
 | Feature | Implementation | Tools Used |
 |---------|----------------|------------|
 | **HTTPS Encryption** | Full SSL/TLS termination | Cloudflare Universal SSL |
-| **SQLi/XSS Prevention** | Parameterized queries<br>Input sanitization | PHP PDO, htmlspecialchars() |
 | **Brute-Force Protection** | Rate limiting | Cloudflare Rate Limiting (5 req/min) |
 
 ---
