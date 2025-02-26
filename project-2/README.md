@@ -111,5 +111,3 @@ DB_PASS=password
 | Database connection drops | Implemented Kubernetes readiness probes |
 
 ---
-
-This README aligns with all project requirements while highlighting the networking, security, and infrastructure improvements through clear visual organization and metric-driven results.
