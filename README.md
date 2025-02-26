@@ -9,3 +9,4 @@ This repo holds the project for computer network class
 ## Projects
 
 * [Project 1](https://github.com/donbigi/computer_network_project/tree/main/project-1)
+* [Project 2](https://github.com/donbigi/computer_network_project/tree/main/project-2)
