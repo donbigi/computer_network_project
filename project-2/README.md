@@ -9,7 +9,7 @@
 ## 📌 Project Overview  
 
 This enhanced weight logging application implements:  
-✅ **Security** - HTTPS, SQLi/XSS protection, brute-force prevention  
+✅ **Security** - HTTPS, brute-force prevention  
 ✅ **Performance** - CDN acceleration, optimized Docker/Kubernetes deployment  
 ✅ **Monitoring** - Traffic analytics, network security analysis  
 ✅ **Modern Infrastructure** - GitOps workflows, CI/CD automation  
@@ -83,8 +83,8 @@ cloudflared tunnel create weight-logger
 
 ```env
 DB_HOST=mysql-service
-DB_USER=root
-DB_PASS=password
+DB_USER=env.USER
+DB_PASS=env.PASS
 ```
 
 ---
