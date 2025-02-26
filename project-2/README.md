@@ -31,7 +31,7 @@ This enhanced weight logging application implements:
 
 | Feature | Implementation | Impact |
 |---------|----------------|--------|
-| **MySql** | Docker container on Kubernetes | Holds records of weight recorded |
+| **MySql** | Docker container on Kubernetes | Holds records of weight recorded (store and retrieve data). |
 
 ### B. Performance Optimization
 
